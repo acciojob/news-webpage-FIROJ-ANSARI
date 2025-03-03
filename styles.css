@@ -1,1 +1,78 @@
-/*  your css code here. If applicable */
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Background */
+body {
+    background: #f5f5f5;
+    color: #000;
+    text-align: center;
+}
+
+/* Header Styling */
+.header {
+    background: #011e29;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Main Container Layout */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Latest News Section */
+.latest-news-section {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.latest-news-section ul {
+    list-style: none;
+}
+
+.latest-news-section ul li {
+    margin: 10px 0;
+}
+
+.latest-news-section ul li a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+/* Main Article */
+.main-article {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Pictorial News Section */
+.pictorial-news-section {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.pictorial-news-section .image-gallery img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
